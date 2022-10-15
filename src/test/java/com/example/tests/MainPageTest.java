@@ -95,6 +95,6 @@ public class MainPageTest extends TestBase{
         $("#nav435104973").$(byText("Карьера")).hover();
         $(byText("Работа в ИТ")).click();
         $(".tn-elem__4351044241649354563314").click();
-        $("#tilda-popup-for-error").shouldBe(Condition.text("Пожалуйста, заполните все обязательные поля"));
+        $("#tilda-popup-for-error").shouldBe(Condition.text("Please fill out all required fields"));
     }
 }
