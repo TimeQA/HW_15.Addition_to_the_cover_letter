@@ -92,9 +92,10 @@ public class MainPageTest extends TestBase{
         step("Открываем главную страницу" ,() -> {
             mainPageElement.openMainPage();
         });
+        $(".t228__right_buttons_wrap").$(byText("RU")).click();
         $("#nav435104973").$(byText("Карьера")).hover();
         $(byText("Работа в ИТ")).click();
         $(".tn-elem__4351044241649354563314").click();
-        $("#tilda-popup-for-error").shouldBe(Condition.text("Please fill out all required fields"));
+        $("#tilda-popup-for-error").shouldBe(Condition.text("Пожалуйста, заполните все обязательные поля"));
     }
 }
