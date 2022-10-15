@@ -95,6 +95,6 @@ public class MainPageTest extends TestBase{
             open("https://selecty.io/career");
         });
         $("[href=\"#sendmyform\"]").click();
-        $("#tilda-popup-for-error").shouldBe(Condition.text("Please fill out all required fields"));
+        $(".js-form-popup-errorbox").shouldBe(Condition.text("Please fill out all required fields"));
     }
 }
