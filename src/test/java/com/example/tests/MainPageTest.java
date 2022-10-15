@@ -2,6 +2,7 @@ package com.example.tests;
 
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Owner;
@@ -13,10 +14,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 import static io.qameta.allure.Allure.step;
@@ -88,14 +90,11 @@ public class MainPageTest extends TestBase{
     @DisplayName("Проверка появления окна с предупреждением о необходимости заполнения " +
             "обязательных полей для отправки резюме")
     @Test
-    public void newResumeFormTest() {
-        step("Открываем главную страницу" ,() -> {
-            mainPageElement.openMainPage();
+    public void newResumeFormTest() throws InterruptedException {
+        step("Открываем страницу \"Working in IT\"" ,() -> {
+            open("https://selecty.io/career");
         });
-        $(".t228__right_buttons_wrap").$(byText("RU")).click();
-        $("#nav435104973").$(byText("Карьера")).hover();
-        $(byText("Работа в ИТ")).click();
-        $(".tn-elem__4351044241649354563314").click();
-        $("#tilda-popup-for-error").shouldBe(Condition.text("Пожалуйста, заполните все обязательные поля"));
+        $("[href=\"#sendmyform\"]").click();
+        $("#tilda-popup-for-error").shouldBe(Condition.text("Please fill out all required fields"));
     }
 }
