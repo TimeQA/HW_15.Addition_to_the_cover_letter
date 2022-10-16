@@ -12,6 +12,7 @@ public class TestBase {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         Configuration.headless = true;
 
+        Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--no-sandbox");
         chromeOptions.addArguments("--disable-infobars");
