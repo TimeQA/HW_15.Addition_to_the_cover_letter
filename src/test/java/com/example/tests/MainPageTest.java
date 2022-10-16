@@ -9,6 +9,7 @@ import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -31,6 +32,7 @@ public class MainPageTest extends TestBase{
 
     @DisplayName("Проверка drop-down menu)")
     @Test
+    @Tag("dropdown")
     public void upperBarTest() {
         step("Открываем главную страницу" ,() -> {
             mainPageElement.openMainPage();
@@ -47,6 +49,7 @@ public class MainPageTest extends TestBase{
 
     @DisplayName("Проверка наличия публикаций в разделе \"СМИ о нас\" ")
     @Test
+    @Tag("posting")
     public void availabilityOfPublicationTest() {
         step("Открываем главную страницу" ,() -> {
             mainPageElement.openMainPage();
@@ -65,6 +68,7 @@ public class MainPageTest extends TestBase{
     }
 
     @MethodSource
+    @Tag("titles")
     @DisplayName("Проверка заголовков основных разделов при выборе русского и анлийского языка")
     @ParameterizedTest(name = "Для {0} отображаются кнопки основых разделов на странице {1} ")
     public void langUpperBarTest(Lang lang, List<String> expectedButtons) {
@@ -77,6 +81,7 @@ public class MainPageTest extends TestBase{
 
     @DisplayName("Проверка появления окна с видео")
     @Test
+    @Tag("checkVideo")
     public void videoFormTest() {
         step("Открываем главную страницу" ,() -> {
             mainPageElement.openMainPage();
@@ -90,6 +95,7 @@ public class MainPageTest extends TestBase{
     @DisplayName("Проверка появления окна с предупреждением о необходимости заполнения " +
             "обязательных полей для отправки резюме")
     @Test
+    @Tag("warning")
     public void newResumeFormTest() throws InterruptedException {
         step("Открываем страницу \"Working in IT\"" ,() -> {
             open("https://selecty.io/career");

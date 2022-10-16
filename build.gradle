@@ -39,3 +39,32 @@ test {
     useJUnitPlatform()
     systemProperties(System.getProperties())
 }
+
+task dropdown_test(type: Test) {
+    useJUnitPlatform{
+        includeTags "dropdown"
+    }
+}
+
+task posting_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "posting"
+    }
+}
+    task titles_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "titles"
+    }
+}
+
+task checkVideo_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "checkVideo"
+    }
+}
+
+task warning_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "checkVideo"
+    }
+}
