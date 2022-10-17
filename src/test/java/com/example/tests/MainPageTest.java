@@ -2,9 +2,8 @@ package com.example.tests;
 
 import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import io.qameta.allure.Attachment;
+import com.example.pages.MainPageElement;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
@@ -15,7 +14,6 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-import java.time.Duration;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -26,7 +24,7 @@ import static io.qameta.allure.Allure.step;
 
 @Owner("RomanovAleksei")
 @Severity(SeverityLevel.BLOCKER)
-public class MainPageTest extends TestBase{
+public class MainPageTest extends TestBase {
 
     MainPageElement mainPageElement = new MainPageElement();
 
