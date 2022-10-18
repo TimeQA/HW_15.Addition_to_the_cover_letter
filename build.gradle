@@ -68,3 +68,8 @@ task warning_test(type: Test) {
         includeTags "checkVideo"
     }
 }
+    task all_test(type: Test) {
+    useJUnitPlatform {
+        includeTags "all"
+    }
+}
