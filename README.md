@@ -13,17 +13,19 @@
 
 ## :computer: Использованный стек технологий
 
-<p align="center">
-<img width="6%" title="IntelliJ IDEA" src="images/logo/Intelij_IDEA.svg">
-<img width="6%" title="Java" src="images/logo/Java.svg">
-<img width="6%" title="Selenide" src="images/logo/Selenide.svg">
-<img width="6%" title="Selenoid" src="images/logo/Selenoid.svg">
-<img width="6%" title="Allure Report" src="images/logo/Allure_Report.svg">
-<img width="6%" title="Gradle" src="images/logo/Gradle.svg">
-<img width="6%" title="JUnit5" src="images/logo/JUnit5.svg">
-<img width="6%" title="GitHub" src="images/logo/GitHub.svg">
-<img width="6%" title="Jenkins" src="images/logo/Jenkins.svg">
-<img width="6%" title="Telegram" src="images/logo/Telegram.svg">
+<code><img width="5%" title="IntelliJ IDEA" src="images/logo/Idea.svg"></code>
+<code><img width="5%" title="Java" src="images/logo/Java.svg"></code>
+<code><img width="5%" title="Selenoid" src="images/logo/Selenoid.svg"></code>
+<code><img width="5%" title="Selenide" src="images/logo/Selenide.svg"></code>
+<code><img width="5%" title="Gradle" src="images/logo/Gradle.svg"></code>
+<code><img width="5%" title="Junit5" src="images/logo/Junit5.svg"></code>
+<code><img width="5%" title="GitHub" src="images/logo/GitHub.svg"></code>
+<code><img width="5%" title="Allure Report" src="images/logo/Allure.svg"></code>
+<code><img width="5%" title="Allure TestOps" src="images/logo/Allure_TO.svg"></code>
+<code><img width="5%" title="RestAssured" src="images/logo/RestAssured.svg"></code>
+<code><img width="5%" title="Jenkins" src="images/logo/Jenkins.svg"></code>
+<code><img width="5%" title="Jira" src="images/logo/Java.svg"></code>
+<code><img width="5%" title="Telegram" src="images/logo/Telegram.svg"></code>
 </p>
 
 
