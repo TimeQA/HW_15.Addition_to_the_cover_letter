@@ -123,7 +123,13 @@ ___
 </p>
 
 ___
+## <img src="images/logo/Jira.svg" width="25" height="25"  alt="Allure"/></a>*Интеграция с* <a target="_blank" href="https://jira.autotests.cloud/browse/AUTO-1175">Jira</a>
 
+<p align="center">  
+<img title="Jira" src="images/Jira.png">  
+</p>
+
+____
 ## <img src="images/logo/Telegram.svg" width="25" height="25"  alt="Allure"/></a> *Уведомление в Telegram при помощи Alert bot*
 
 <p align="center">  
