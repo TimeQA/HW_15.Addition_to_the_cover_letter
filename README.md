@@ -55,9 +55,9 @@
 ____
 
 ## <img src="images/Jenkins.svg" width="25" height="25"  alt="Jenkins"/></a> Jenkins job
-<a target="_blank" href="https://jenkins.autotests.cloud/job/nkramar_T1_Automated_Tests/">**Сборка в Jenkins**</a>
+<a target="_blank" href="https://jenkins.autotests.cloud/job/15.Addition_to_the_cover_letter/">**Сборка в Jenkins**</a>
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/nkramar_T1_Automated_Tests/"><img src="images/JenkinsJob.png" alt="Jenkins"/></a>  
+<a href="https://jenkins.autotests.cloud/job/15.Addition_to_the_cover_letter/"><img src="images/JenkinsJob.png" alt="Jenkins"/></a>  
 </p>
 
 
