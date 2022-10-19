@@ -26,6 +26,8 @@ public class TestBase {
         chromeOptions.addArguments("--disable-popup-blocking");
         chromeOptions.addArguments("--disable-notifications");
         chromeOptions.addArguments("--lang=en-en");
+
+        Configuration.browserCapabilities = capabilities;
     }
 
     @AfterEach
