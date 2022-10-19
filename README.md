@@ -87,3 +87,24 @@ ${TASK}
 ```
 
 ## <img src="images/Allure_Report.svg" width="25" height="25"  alt="Allure"/></a> *Allure* <a target="_blank" href="https://jenkins.autotests.cloud/job/nkramar_T1_Automated_Tests/14/allure/">*отчёт*</a>
+___
+
+### *Основная страница отчёта*
+
+<p align="center">  
+<img title="Allure Overview Dashboard" src="images/Allure_Report_Overview.png">  
+</p>  
+
+### *Тест кейсы*
+
+<p align="center">  
+<img title="Allure Tests" src="images/Test_cases.png">  
+</p>
+
+### *Графики*
+
+  <p align="center">  
+<img title="Allure Graphics" src="images/Allure_Charts.png">  
+</p>
+
+___
