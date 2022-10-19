@@ -2,6 +2,7 @@ package com.example.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
+import com.example.Config.Project;
 import com.example.helpers.AllureAttachments;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
@@ -14,6 +15,9 @@ public class TestBase {
     static void configure() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
 //        Configuration.headless = true;
+        Configuration.browser = Project.config.browser();
+        Configuration.browserVersion = Project.config.browserVersion();
+        Configuration.browserSize = Project.config.browserSize();
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -28,6 +32,8 @@ public class TestBase {
         chromeOptions.addArguments("--lang=en-en");
 
         Configuration.browserCapabilities = capabilities;
+
+
     }
 
     @AfterEach
