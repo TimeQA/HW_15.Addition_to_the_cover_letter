@@ -130,4 +130,8 @@ ___
 <img title="Allure Overview Dashboard" src="images/Telegram_bot.png">  
 </p>
 
+## <img src="images/logo/Selenoid.svg" width="25" height="25"  alt="Selenoid"/></a> *Примеры видео выполнения тестов на Selenoid*
 
+
+
+<img title="Selenoid Video" src="images/Check_warning.gif" width="650" height="350"  alt="video">   
